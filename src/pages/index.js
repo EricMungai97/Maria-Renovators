@@ -2,20 +2,27 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Choose from "@/components/choose";
 import Services from "@/components/services";
-import { useRouter } from 'next/router';
-
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  
   const router = useRouter();
   const hireUsButtonClicked = () => {
-    router.push('/contact');
+    router.push("/contact");
   };
-  
+  const [bgImageLoaded, setBgImageLoaded] = useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/image/background.jpg";
+    img.onload = () => {
+      setBgImageLoaded(true);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -25,38 +32,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-[url('/image/background.jpg')] bg-cover bg-center max-w-screen">
-          <section className="text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover" style={{backgroundPosition: 'center'}}>
-            <p className="text-white text-7xl font-bold"> IT `S YOUR DREAM</p>
-            <p className="text-black text-2xl font-bold">We Are Building</p>
-            <p className="text-white text-4xl font-bold">
-              We Are Constructing
-            </p>
-            <p className="text-black text-5xl font-bold">We Are Planning</p>
-          </section>
-          <section className="bg-yellow-400 text-lg font-semibold flex justify-between p-4 sm:max-md:flex flex-wrap">
-            <p>Looking for best partner for your next Renovations?</p>
-            <button onClick={hireUsButtonClicked}className="border-solid border-2 border-black p-2 ">
-              Hire us Now
-            </button>
-          </section>
-          <section className="bg-white lg:grid grid-cols-3 justify-items-stretch whitespace-normal pr-8 py-20 sm:max-sm:grid-rows-3 pl-8 ">
-            <div className="font-bold text-4xl whitespace-nowrap pr-5 sm:max-sm:row-span-1">
-              Who We Are
-              <span className="h-2 bg-yellow-400 w-50 mt-30 block"></span>
-            </div>
+        <section
+          className={`text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover ${
+            bgImageLoaded ? "" : "hidden"
+          }`}
+          style={{ backgroundPosition: "center" }}
+        >
+          <p className="text-white text-7xl font-bold"> IT `S YOUR DREAM</p>
+          <p className="text-black text-2xl font-bold">We Are Building</p>
+          <p className="text-white text-4xl font-bold">We Are Constructing</p>
+          <p className="text-black text-5xl font-bold">We Are Planning</p>
+        </section>
+        <section className="bg-yellow-400 text-lg font-semibold flex justify-between p-4 sm:max-md:flex flex-wrap">
+          <p>Looking for best partner for your next Renovations?</p>
+          <button
+            onClick={hireUsButtonClicked}
+            className="border-solid border-2 border-black p-2 "
+          >
+            Hire us Now
+          </button>
+        </section>
+        <section className="bg-white lg:grid grid-cols-3 justify-items-stretch whitespace-normal pr-8 py-20 sm:max-sm:grid-rows-3 pl-8 ">
+          <div className="font-bold text-4xl whitespace-nowrap pr-5 sm:max-sm:row-span-1">
+            Who We Are
+            <span className="h-2 bg-yellow-400 w-50 mt-30 block"></span>
+          </div>
 
-            <div className="pr-8 sm:max-sm:row-span-2 text-md font-semibold">
-            At Marias Renovators, we are passionate about transforming homes into beautiful and functional living spaces. With over 10 years of experience in the industry, we have built a reputation for excellence in craftsmanship and customer service. We take pride in our attention to detail and our ability to bring our clients visions to life.
-            </div>
+          <div className="pr-8 sm:max-sm:row-span-2 text-md font-semibold">
+            At Marias Renovators, we are passionate about transforming homes
+            into beautiful and functional living spaces. With over 10 years of
+            experience in the industry, we have built a reputation for
+            excellence in craftsmanship and customer service. We take pride in
+            our attention to detail and our ability to bring our clients visions
+            to life.
+          </div>
 
-            <div className="air sm:max-sm:row-span-1 text-md font-semibold">
-            Whether you are looking to update your kitchen, add a new bathroom, or transform your entire home, we are here to help. We understand that a renovation can be a daunting task, but with our expertise and guidance, we will make the process as seamless and stress-free as possible.
-            </div>
-          </section>
-          <section id="services">
-            <Services />
-            <Choose />
-          </section>
+          <div className="air sm:max-sm:row-span-1 text-md font-semibold">
+            Whether you are looking to update your kitchen, add a new bathroom,
+            or transform your entire home, we are here to help. We understand
+            that a renovation can be a daunting task, but with our expertise and
+            guidance, we will make the process as seamless and stress-free as
+            possible.
+          </div>
+        </section>
+        <section id="services">
+          <Services />
+          <Choose />
+        </section>
       </main>
     </>
   );

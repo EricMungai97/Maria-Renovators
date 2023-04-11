@@ -3,7 +3,7 @@ import { useForm, handleSubmit } from "react-hook-form";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    window.location.href = `mailto:mungaikinus@gmail.com?subject=Message from ${data.name}&body=${data.message}. Phone Number: ${data.phone}, Email: ${data.email}`;
+    window.location.href = `mailto:mariasrenovators@gmail.com?subject=Message from ${data.name}&body=${data.message}. Phone Number: ${data.phone}, Email: ${data.email}`;
   };
   return (
     <div className="bg-black  xl:grid grid-cols-2 gap-4 sm:max-sm:grid-rows-2 px-4 py-4">
@@ -13,27 +13,25 @@ export default function Contact() {
       <div className="pt-12">
         <div className="font-bold text-white"></div>
         <p className="text-white">
-          Collins Street West, Victoria 8007 Australia
+          Graham,United States
         </p>
         <hr className="text-white"></hr>
         <p className="text-md text-white">
-          <span className="text-yellow-400 font-bold">Phone:</span> (+254 712
-          345 678)
+          <span className="text-yellow-400 font-bold">Mobile:</span> +1 (253)-271-1253
         </p>
         <hr className="text-white"></hr>
         <p className="text-md text-white">
-          <span className="text-yellow-400 font-bold">Fax:</span> (+254 712 345
-          678)
+          <span className="text-yellow-400 font-bold">Cell Phone:</span> (774) 823 1253
         </p>
         <hr className="text-white"></hr>
         <p className="text-md text-white">
           <span className="text-yellow-400 font-bold">Email:</span>{" "}
-          john@gmail.com
+          mariasrenovators@gmail.com
         </p>
         <hr className="text-white"></hr>
         <p className="text-md text-white">
           <span className="text-yellow-400 font-bold">Web: </span>{" "}
-          mariarenovators.com
+          mariasrenovators.com
         </p>
         <hr className="text-white"></hr>
       </div>

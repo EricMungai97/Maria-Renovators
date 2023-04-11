@@ -16,7 +16,7 @@ function Choose() {
           <FontAwesomeIcon
             icon={faCheck}
             className="text-yellow-500 text-4xl"
-            width="60"
+            width="30"
           />
         </span>
         <h6>Professional Staff</h6>
