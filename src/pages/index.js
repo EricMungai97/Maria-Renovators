@@ -24,15 +24,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[url('/image/bg-17.jpg')] bg-cover bg-center max-w-screen">
-        <div className="">
-          <section className="text-center m-auto pt-60 pb-40 max-w-screen-lg">
-            <p className="text-white text-7md font-bold"> IT `S YOUR DREAM</p>
-            <p className="text-yellow-400 text-md font-bold">We Are Building</p>
-            <p className="text-yellow-400 text-md font-bold">
+      <main className="bg-[url('/image/background.jpg')] bg-cover bg-center max-w-screen">
+          <section className="text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover" style={{backgroundPosition: 'center'}}>
+            <p className="text-white text-7xl font-bold"> IT `S YOUR DREAM</p>
+            <p className="text-black text-2xl font-bold">We Are Building</p>
+            <p className="text-white text-4xl font-bold">
               We Are Constructing
             </p>
-            <p className="text-yellow-400 text-md font-bold">We Are Planning</p>
+            <p className="text-black text-5xl font-bold">We Are Planning</p>
           </section>
           <section className="bg-yellow-400 text-lg font-semibold flex justify-between p-4 sm:max-md:flex flex-wrap">
             <p>Looking for best partner for your next Renovations?</p>
@@ -46,29 +45,18 @@ export default function Home() {
               <span className="h-2 bg-yellow-400 w-50 mt-30 block"></span>
             </div>
 
-            <div className="pr-4 sm:max-sm:row-span-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae. Sed
-              ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae.
+            <div className="pr-8 sm:max-sm:row-span-2 text-md font-semibold">
+            At Marias Renovators, we are passionate about transforming homes into beautiful and functional living spaces. With over 10 years of experience in the industry, we have built a reputation for excellence in craftsmanship and customer service. We take pride in our attention to detail and our ability to bring our clients visions to life.
             </div>
 
-            <div className="air sm:max-sm:row-span-1">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae. Sed
-              ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae.
+            <div className="air sm:max-sm:row-span-1 text-md font-semibold">
+            Whether you are looking to update your kitchen, add a new bathroom, or transform your entire home, we are here to help. We understand that a renovation can be a daunting task, but with our expertise and guidance, we will make the process as seamless and stress-free as possible.
             </div>
           </section>
           <section id="services">
             <Services />
             <Choose />
           </section>
-        </div>
       </main>
     </>
   );

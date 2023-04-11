@@ -73,7 +73,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <p className="text-white col-span-2 text-center text-2xl font-bold">
+      <p className="text-white col-span-2 text-center text-2xl font-bold pb-20">
         We Would Love To Work With You
       </p>
     </div>
