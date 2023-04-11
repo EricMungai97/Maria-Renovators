@@ -5,7 +5,7 @@ import Footer from './Footer'
 export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen'>
-      <Navbar />
+      <Navbar className="max-w-screen"/>
       <main>{children}</main>
       <Footer />
     </div>

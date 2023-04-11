@@ -24,7 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[url('/image/bg-17.jpg')] bg-cover bg-center">
+      <main className="bg-[url('/image/bg-17.jpg')] bg-cover bg-center max-w-screen">
         <div className="">
           <section className="text-center m-auto pt-60 pb-40 max-w-screen-lg">
             <p className="text-white text-7md font-bold"> IT `S YOUR DREAM</p>
