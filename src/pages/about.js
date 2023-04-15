@@ -84,7 +84,7 @@ function About() {
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <Image
               class="w-screen"
-              src="/image/Winnie (2).jpeg"
+              src="/image/Winnie.jpeg"
               alt="Sunset in the mountains"
               width={300}
               height={200}
