@@ -24,6 +24,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.32.0",
     "tw-elements": "^1.0.0-beta1"
   },
   "devDependencies": {

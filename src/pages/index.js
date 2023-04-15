@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Choose from "@/components/choose";
 import Services from "@/components/services";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+;
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -14,14 +14,7 @@ export default function Home() {
   const hireUsButtonClicked = () => {
     router.push("/contact");
   };
-  const [bgImageLoaded, setBgImageLoaded] = useState(false);
-  useEffect(() => {
-    const img = new Image();
-    img.src = "/image/background.jpg";
-    img.onload = () => {
-      setBgImageLoaded(true);
-    };
-  }, []);
+  
 
   return (
     <>
@@ -31,11 +24,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[url('/image/background.jpg')] bg-cover bg-center max-w-screen">
+      <main className="bg-[url('/image/background.jpg')] bg-cover bg-center max-w-screen ">
         <section
-          className={`text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover ${
-            bgImageLoaded ? "" : "hidden"
-          }`}
+          className="text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover"
           style={{ backgroundPosition: "center" }}
         >
           <p className="text-white text-7xl font-bold"> IT `S YOUR DREAM</p>

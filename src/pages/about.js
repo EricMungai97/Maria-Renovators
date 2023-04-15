@@ -9,7 +9,7 @@ function About() {
           Image is <span className="text-yellow-400">Everything</span>
           <span className="h-4 bg-yellow-400 w-20 mt-3 block"></span>
         </p>
-        <div className="lg:grid grid-cols-3 sm:max-md:grid-rows-3 ">
+        <div className="lg:grid grid-cols-3 gap-4 sm:max-md:grid-rows-3 ">
           <div className="sm:max-md:row-span-1">
             <h1 className="font-semibold">Our Vision</h1>
             <p className="text-lg font-semibold">
@@ -44,7 +44,7 @@ function About() {
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <Image
               class="w-screen"
-              src="/image/John.jpeg"
+              src="/image/Rurua.jpeg"
               alt="Sunset in the mountains"
               width={300}
               height={200}
@@ -63,13 +63,34 @@ function About() {
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <Image
               class="w-screen"
-              src="/image/winnie.jpeg"
+              src="/image/Emily.jpeg"
               alt=""
               width={300}
               height={200}
             />
             <div class="px-6 py-2">
-              <div class="font-bold text-2xl mb-2 text-center">Winnie Mundia</div>
+              <div class="font-bold text-2xl mb-2 text-center">
+                Emily Mundia
+              </div>
+            </div>
+            <div class="px-6 pb-2 text-center">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                Co-Founder
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="sm:row-span-5">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <Image
+              class="w-screen"
+              src="/image/Winnie (2).jpeg"
+              alt="Sunset in the mountains"
+              width={300}
+              height={200}
+            />
+            <div class="px-6 py-2">
+              <div class="font-bold text-xl mb-2 text-center">Winnie</div>
             </div>
             <div class="px-6 pb-2 text-center">
               <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -82,13 +103,13 @@ function About() {
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <Image
               class="w-screen"
-              src="/image/wambui.jpeg"
+              src="/image/Mary.jpeg"
               alt="Sunset in the mountains"
               width={300}
               height={200}
             />
             <div class="px-6 py-2">
-              <div class="font-bold text-xl mb-2 text-center">Wambui</div>
+              <div class="font-bold text-xl mb-2 text-center">Mary</div>
             </div>
             <div class="px-6 pb-2 text-center">
               <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
