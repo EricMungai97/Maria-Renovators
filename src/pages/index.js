@@ -24,19 +24,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[url('/image/background.jpg')] bg-cover bg-center max-w-screen ">
+      <main className="bg-[url('/image/image4.JPEG')] bg-cover bg-top max-w-screen ">
         <section
-          className="text-center mx-auto pt-32 pb-40 bg-[url('/image/background.jpg')] bg-cover"
+          className="text-center mx-auto pt-32 pb-40 bg-[url('/image/image4.JPEG')] bg-cover"
           style={{ backgroundPosition: "center" }}
         >
-          {/* <p className="text-white text-7xl font-bold"> IT `S YOUR DREAM</p>
+          <p className="text-white text-6xl font-bold"><span className="text-yellow-400 decoration">IMAGE</span> IS EVERYTHING</p>
           <p className="text-black text-2xl font-bold">We Are Building</p>
           <p className="text-white text-4xl font-bold">We Are Constructing</p>
-          <p className="text-black text-5xl font-bold">We Are Planning</p> */}
-          <p className="font-bold text-8xl">
-          Image is <span className="text-yellow-400">Everything</span>
-          <span className="h-4 bg-yellow-400 w-20 mt-3 block"></span>
-        </p>
+          <p className="text-black text-5xl font-bold">We Are Planning</p>
         </section>
         <section className="bg-yellow-400 text-lg font-semibold flex justify-between p-4 sm:max-md:flex flex-wrap">
           <p>Looking for best partner for your next Renovations?</p>

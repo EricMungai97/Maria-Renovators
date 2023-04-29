@@ -5,7 +5,7 @@ import Caarousel from "@/pages/carousel";
 function Projects() {
   return (
     <>
-      <div className="bg-yellow-400 pt-1 lg:pb-24 min-3/5">
+      <div className="bg-white pt-1 lg:pb-24 min-3/5">
         <div>
           <p className="font-bold text-3xl text-black text-center">
             Recent Works
