@@ -10,7 +10,7 @@ export default function Navbar() {
           width="30px"
           className="text-white hover:text-gray-900 mx-2 text-10px"
         />
-        <p className="text-white text-2xl font-bold">Marias Renovators</p>
+        <p className="text-white text-2xl font-bold">Marias Renovators LLC</p>
       </div>
       <div className="flex justify-between gap-4 lg:text-lg sm:max-sm:text-sm px-2 py-3 bg-black">
           <Link className="text-white font-bold " href="/">

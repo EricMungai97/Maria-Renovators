@@ -12,6 +12,7 @@ function Caarousel() {
     { src: "/image/image7.JPEG", alt: ""},
     { src: "/image/image8.JPEG", alt: ""},
     { src: "/image/image9.JPEG", alt: ""},
+    { src: "/image/image10.mp4", alt: ""}
   ];
 
   return (
@@ -26,6 +27,7 @@ function Caarousel() {
               objectFit="cover"
               layout="fill"
             />
+            
           </div>
         </Carousel.Item>
       ))}
